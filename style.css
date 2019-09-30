@@ -1,0 +1,53 @@
+:root{
+    --grid-sides: 2;
+    --color: black;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(var(--grid-sides), 1fr);
+    grid-template-rows: repeat(var(--grid-sides), 1fr);
+    width: 720px;
+    height:720px;
+    margin: 0 auto;
+}
+
+.top{
+    width: 720px;
+    height: 60px;
+    margin: 30px auto 0px auto;
+    padding-top: 30px;
+    text-align: center;
+    background-image: url(https://cdn3.vectorstock.com/i/1000x1000/68/32/abstract-colorful-retro-shiny-colorful-background-vector-3636832.jpg);
+}
+
+.resolution{
+    display: inline-block;
+}
+
+.refined{
+    display: inline-block;
+}
+
+.random{
+    display: inline-block;
+}
+
+button{
+        padding: 6px 12px;
+        font-size: 14px;
+        font-weight: 600;
+        border: 1px solid rgba(27,31,35,.2);
+        border-radius: .25em;
+        color: #24292e;
+        font-family: sans-serif;
+}
+
+.cell{  
+    border: 1px solid rgba(27,31,35,.2);
+    background-color: white;
+}
+
+.colored{
+    background-color: var(--color);
+}
